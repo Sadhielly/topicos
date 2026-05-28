@@ -91,3 +91,23 @@ footer{
     border-radius: 4px;
     cursor: pointer;
 }
+
+.filtros {
+    padding: 15px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+#filtro-status {
+    padding: 8px;
+    border-radius: 4px;
+}
+.badge {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-left: 10px;
+    color: white;
+}
+.badge-pendente { background-color: #e67e22; }
+.badge-concluida { background-color: #2ecc71; }
