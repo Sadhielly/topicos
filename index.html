@@ -10,6 +10,8 @@
 
 <body>
 
+    <button id="toggle-dark-mode" class="btn-dark-mode">🌙 Alternar Tema</button>
+
     <header>
         <h1>Receitas da Casa</h1>
         <p>Receitas simples e deliciosas</p>
@@ -51,13 +53,6 @@
             </article>
         </section>
 
-        <script>
-            document.addEventListener("DOMContentLoaded", () => {
-                let tarefasSalvas = JSON.parse(localStorage.getItem("tarefas")) || [];
-                console.log("Hotfix v1.0.1 ativo. Dados protegidos contra perda.");
-            });
-        </script>
-
         <section class="filtros">
             <label for="filtro-status">Filtrar por Status: </label>
             <select id="filtro-status">
@@ -75,12 +70,7 @@
         <p>Projeto GitFlow - HTML e CSS</p>
     </footer>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            let tarefasSalvas = JSON.parse(localStorage.getItem("tarefas")) || [];
-            console.log("Hotfix v1.0.1 ativo. Dados protegidos contra perda.");
-        });
-    </script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>
