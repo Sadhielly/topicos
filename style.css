@@ -1,73 +1,76 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-header{
-  background-color: #ff6b00;
-  color: white;
-  text-align: center;
-  padding: 30px;
+header {
+    background-color: #ff6b6b;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
-header h1{
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
-main{
-  padding: 40px;
+main {
+    padding: 30px; /* Ajuste da Rodada 3 */
 }
 
-.receitas{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+.receitas {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
 }
 
-.card{
-  background-color: white;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: 0.3s;
+.card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-width: 300px;
+    transition: transform 0.3s;
 }
 
-.card:hover{
-  transform: scale(1.03);
+.card:hover {
+    transform: scale(1.03);
 }
 
-.card img{
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
-.card h2{
-  padding: 20px 20px 10px;
+.card h2 {
+    padding: 20px 20px 10px;
 }
 
-.card p{
-  padding: 0 20px 15px;
+.card p {
+    padding: 0 20px 15px;
 }
 
-.card ul{
-  padding: 0 40px 20px;
+.card ul {
+    padding: 0 40px 20px;
 }
 
-footer{
-  background-color: #222;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
 }
 
 .cadastro-tarefa {
@@ -77,12 +80,14 @@ footer{
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
+
 #input-tarefa {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     width: 70%;
 }
+
 #btn-adicionar {
     padding: 10px 15px;
     background-color: #2ecc71;
@@ -98,10 +103,12 @@ footer{
     margin-bottom: 20px;
     border-radius: 5px;
 }
+
 #filtro-status {
     padding: 8px;
     border-radius: 4px;
 }
+
 .badge {
     padding: 5px 10px;
     border-radius: 20px;
@@ -109,14 +116,9 @@ footer{
     margin-left: 10px;
     color: white;
 }
+
 .badge-pendente { background-color: #e67e22; }
 .badge-concluida { background-color: #2ecc71; }
-
-
-main {
-    padding: 30px; 
-}
-
 
 .spinner {
     border: 4px solid rgba(0, 0, 0, 0.1);
@@ -127,7 +129,38 @@ main {
     animation: spin 1s linear infinite;
     margin-top: 10px;
 }
+
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+.btn-dark-mode {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+body.dark-mode header {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode .cadastro-tarefa,
+body.dark-mode .card,
+body.dark-mode .filtros {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.05);
 }
