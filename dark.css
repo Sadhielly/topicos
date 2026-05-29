@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #333;
+  color: #ff6b00;
+}
+
+header{
+  background-color: #230d00;
+  color: #ff6b00;
+  text-align: center;
+  padding: 30px;
+}
+
+.card{
+  background-color: #222;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.cadastro-tarefa {
+    padding: 20px;
+    background-color: #3b3b3b;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.filtros {
+    padding: 15px;
+    background-color: #3b3b3b;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}

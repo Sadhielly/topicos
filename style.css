@@ -1,10 +1,10 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
   color: #333;
@@ -38,7 +38,7 @@ main{
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   transition: 0.3s;
-}
+} 
 
 .card:hover{
   transform: scale(1.03);
@@ -76,7 +76,8 @@ footer{
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
+} 
+
 #input-tarefa {
     padding: 10px;
     border: 1px solid #ccc;
@@ -98,6 +99,7 @@ footer{
     margin-bottom: 20px;
     border-radius: 5px;
 }
+
 #filtro-status {
     padding: 8px;
     border-radius: 4px;
